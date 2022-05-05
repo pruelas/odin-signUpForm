@@ -1,0 +1,124 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+
+body{
+
+    border: rgb(255, 51, 51) solid 2px;
+    display: flex;
+    height: 100%;
+    width: 100%;  
+    margin: 0%;
+    padding: 0;
+    background-color: rgb(236, 236, 236);
+
+}
+.image{
+    background-color: rgb(255, 0, 0);
+    width: 35vw;
+    height: inherit;
+}
+
+img{
+    object-fit: cover;
+}
+
+#logo-wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 35vw;
+    height: 12vh;
+}
+#logo{
+    height: inherit;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ODIN{
+    font-family: norse;
+    color: ivory;
+    font-size: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#icon{
+    height: 90%;
+}
+
+
+
+footer{
+    border: steelblue solid;
+}
+
+.textContent{
+    box-sizing: border-box;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+}
+
+#homeText{
+    margin-top: -9vh;
+    margin-bottom: 3vh;
+    font-size: 2.0vh;
+    font-weight: 600;
+    padding-left: 2%;
+}
+
+div>.logIn{
+    font-size: 1.5vh;
+    padding-left: 2%;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: greenyellow solid 2px;
+    box-shadow:5px 5px 5px rgba(105, 105, 105, 0.288);
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    overflow: hidden;
+}
+
+div.formRow{
+    position: relative;
+    padding-left: 2vw;
+}
+label{
+    position: absolute;
+}
+
+input{
+    align-self: center;
+    margin: 2vw .5vw;
+}
