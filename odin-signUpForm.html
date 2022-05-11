@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
 <header>
+<link rel="stylesheet" href="meyersReset.css">
 <link rel="stylesheet" href="odin-signUpForm.css">
 </header>
 <title>
@@ -10,6 +10,8 @@
     <div class="image">
         <img class="image" src="halie-west-25xggax4bSA-unsplash.jpg">
 
+        <div id="credit">Photo by  <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></div>
+
 
     </div>
 
@@ -18,50 +20,58 @@
             <img id="icon" src="odin-lined.png">
         </div>
         <div id="ODIN">ODIN</div>
+        
     </div>
+
+    
 
     <div class=textContent>
 
         <div id="homeText">
             <p>
                 This is not a real online service! You know you need something like this in your 
-                life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+                life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started.
             </p>
 
             <p>You <i> know</i> you want to.</p>
         </div>
 
         <div class="form">
-            <form action="post">
+            <form id="input" action="post">
                 
                 <h1>Let's do this!</h1>
 
                 <div class="formRow">
-                    <label for="firstName">First Name</label>
+                    <label for="firstName">FIRST NAME</label>
                     <input type="text" id="firstName" name="firstName" placeholder="Tom">
-                    <label for="lastName">Last Name</label>
+                    <label for="lastName">LAST NAME</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Fiddleton">
                 </div>
 
                 <div class="formRow">
-                    <label for="email">Email</label>
+                    <label for="email">EMAIL</label>
                     <input type="email" name="email" id="email" placeholder="example@odin.com">
-                    <label for="phoneNumber">Phone Number</label>
+                    <label for="phoneNumber">PHONE NUMBER</label>
                     <input type="text" name="phoneNumber" id="phoneNumber">
                 </div>
 
                 <div class="formRow">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" name="password" required>
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" name="confirmPassword" required>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" onchange="checkPassword()" required><span id="passMisMatch"></span>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" onchange="checkPassword()" required>
                 </div>
 
                 <div calss="formRow">
-                    <input type="submit" value="Create Account"> 
+                    
                 </div>
 
             </form>
+        </div>
+
+
+        <div>
+            <button type="submit" form="input">Create Account </button>
         </div>
 
         <div>
@@ -71,7 +81,7 @@
     
 </body>
 <footer>
-
+<script src = "odin-signUpForm.js" ></script>
 </footer>
 
 </html>
