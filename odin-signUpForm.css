@@ -1,6 +1,6 @@
 html{
     height: 100%;
-    width:100vw;
+    width: 100%;
     font-family: sans-serif;
 }
 
@@ -9,26 +9,19 @@ html{
     src: url(Norse-Bold.otf);
 }
 
-/* // Firefox */
-@-moz-document url-prefix() {
-    body {
-        box-sizing: border-box; 
-        margin: 0;
-        padding: 1px;
-    }
-}
-
 body{
-    border: rgb(54, 105, 243) solid 2px;
+    /* border: rgb(54, 105, 243) solid 2px; */
     display: flex; 
-    height: 100%;
+    height: inherit;
     background-color: rgb(247, 247, 247);
-
+    margin: 0;
+    padding: 0;
 }
+
 .image{
     background-color: rgb(255, 0, 0);
     width: 25vw;
-    min-height: 100%;
+    height: 100%;
 }
 
 img{
@@ -70,7 +63,7 @@ img{
 
 #credit{
     position: absolute;
-    bottom: 2%;
+    bottom: 2em;
     color: rgba(240, 240, 240, 0.801);
     width: inherit;
     text-align: center;
@@ -82,17 +75,9 @@ input:focus{
     box-shadow: 5px 5px 2px rgba(105, 105, 105, 0.288);
 }
 
-/* a::after{
-    color:white;
-} */
-
 input:invalid {
     border: 1px solid red;
   }
-
-/* input[type*="password"]:invalid + span::before{
-    color:red;
-} */
 
 div>button{
     background-color:#596D48;
@@ -107,10 +92,6 @@ div>button{
     box-shadow: 3px 3px 6px rgba(105, 105, 105, 0.288);
     margin-top: 2em;
     margin-left: 3%;
-}
-
-footer{
- /*    border: rgb(229, 255, 0) solid; */
 }
 
 .textContent{
@@ -146,13 +127,11 @@ div>.logIn{
 .form{
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
-    
     box-shadow:5px 5px 5px rgba(105, 105, 105, 0.288);
     width: inherit;
     display: flex;
     flex-direction: row;
     padding-left: 3%;
-
     border:rgba(230, 230, 230, 0.466) solid 1px;
 }
 
@@ -160,7 +139,6 @@ form{
     display: flex;
     flex-direction: column;
     align-self: center;
-    overflow: hidden;
 }
 
 div.formRow{
